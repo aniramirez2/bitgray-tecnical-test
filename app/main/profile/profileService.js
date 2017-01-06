@@ -11,8 +11,11 @@ angular.module('myApp')
             return $http.get(urlBase + '/users/' + id);
         };
 
-        this.getAlbums = function() {
-            return $http.get(urlBase + '/albums' + id );
+        this.getAlbums = function(userId) {
+            return $http.get(urlBase + '/albums?userId='+userId );
         };
-
+        
+        this.getPhotos = function(id) {
+            return $http.get(urlBase + '/photos?albumId=' + id );
+        };
     }]);

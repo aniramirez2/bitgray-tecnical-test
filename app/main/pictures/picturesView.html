@@ -1,13 +1,25 @@
+<style>
+    .photo-title{
+        font-size:10pt;
+        color:gray;
+        max-width:210px;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;        
+    }
+    
+</style>
 <section>
     <div class="container gallery">
         <div class="row" ng-repeat="album in albums" >  
           <h6>{{album.title}}</h6>    
-          <div  >
-              <div class="col-xs-6 col-md-3 col-lg-3">
-                    <a class="thumbnail"   href="{{album.thumbnailUrl}}">
-                      <img src="{{ album.url}}" alt="..." />
+          <div>
+              <div ng-repeat="photo in album.photos" class="col-xs-6 col-md-3 col-lg-3">
+                    <div class="photo-title">{{photo.title}}</div>
+                    <a class="thumbnail"   href="{{photo.thumbnailUrl}}">
+                      <img src="{{ photo.url }}" alt="..." />
                     </a>
-                    <p><h6>{{album.title}}</h6></p>  
+                      
               </div>
           </div>
        </div>

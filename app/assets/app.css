@@ -31,6 +31,16 @@ h6 {
   text-transform: uppercase;
   font-weight: 700;
 }
+.gallery{
+    padding-bottom: 30px;
+}
+.photo-title{
+    font-size:10pt;
+    color:gray;
+    text-overflow:ellipsis;
+    width:150px;
+    overflow:hidden;
+}
 hr.star-light,
 hr.star-primary {
   padding: 0;
@@ -503,7 +513,4 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
-}
-.gallery{
-    padding-bottom: 30px;
 }
