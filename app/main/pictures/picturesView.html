@@ -1,5 +1,15 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is 2+8 ' }}
-</p>
+<section>
+    <div class="container gallery">
+        <div class="row" ng-repeat="album in albums" >  
+          <h6>{{album.title}}</h6>    
+          <div  >
+              <div class="col-xs-6 col-md-3 col-lg-3">
+                    <a class="thumbnail"   href="{{album.thumbnailUrl}}">
+                      <img src="{{ album.url}}" alt="..." />
+                    </a>
+                    <p><h6>{{album.title}}</h6></p>  
+              </div>
+          </div>
+       </div>
+    </div>
+</section>

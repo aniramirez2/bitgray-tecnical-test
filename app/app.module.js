@@ -23,14 +23,6 @@
         controller: 'picturesCtrl'
       });
     }])
-    .controller('picturesCtrl', [function(){
-      //..
-    }])
-
-  // appending another service/controller/filter etc to the same module-call inside the same file
-    .service('picturesService', [function(){ 
-    //.. 
-    }]);
 
   // you can of course use angular.module('mymod') here as well
   angular.module('myApp.profile', ['ngRoute'])
@@ -39,6 +31,9 @@
             templateUrl: 'main/profile/profileView.html',
             controller: 'profileCtrl'
           });
-      }]);    
+      }])
+      .run(function($rootScope) {
+        $rootScope.userId = Math.floor((Math.random() * 10)+1);
+    });    
   
 })();

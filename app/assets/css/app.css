@@ -54,7 +54,7 @@ hr.star-light {
   border-color: white;
 }
 hr.star-light:after {
-  background-color: #18BC9C;
+  background-color: #86908E;
   color: white;
 }
 hr.star-primary {
@@ -69,7 +69,7 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #18BC9C;
+  background: #86908E;
   color: white;
 }
 header .container {
@@ -129,7 +129,7 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #18BC9C;
+  color: gray;
   outline: none;
 }
 .navbar-custom .navbar-nav li a:focus,
@@ -138,13 +138,13 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
-  background: #18BC9C;
+  background: gray;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
   color: white;
-  background: #18BC9C;
+  background: #f65959b3;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -154,9 +154,9 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #18BC9C;
+  background-color: #f65959b3;
   color: white;
-  border-color: #18BC9C;
+  border-color: white;
 }
 @media (min-width: 768px) {
   .navbar-custom {

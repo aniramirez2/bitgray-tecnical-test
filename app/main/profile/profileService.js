@@ -1,26 +1,18 @@
-angular.module('myApp.profile')
+angular.module('myApp')
 .service('profileService', ['$http', function ($http) {
 
         var urlBase = 'http://jsonplaceholder.typicode.com';
 
-        this.getUsers = function () {
+        this.getUsers = function() {
             return $http.get(urlBase + '/users' );
         };
 
-        this.getUser = function (id) {
+        this.getUser = function(id) {
             return $http.get(urlBase + '/users/' + id);
         };
 
-        this.insertUser = function (user) {
-            return $http.post(urlBase + '/users', user);
-        };
-
-        this.updateUser = function (user) {
-            return $http.put(urlBase + '/users/' + cust.ID, user)
-        };
-
-        this.deleteUser = function (id) {
-            return $http.delete(urlBase + '/users/' + id);
+        this.getAlbums = function() {
+            return $http.get(urlBase + '/albums' + id );
         };
 
     }]);

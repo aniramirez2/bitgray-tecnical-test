@@ -109,6 +109,7 @@ header .intro-text .skills {
   text-transform: uppercase;
   font-weight: 700;
   border: none;
+  padding:15px 
 }
 .navbar-custom a:focus {
   outline: none;
@@ -160,7 +161,7 @@ header .intro-text .skills {
 }
 @media (min-width: 768px) {
   .navbar-custom {
-    padding: 25px 0;
+    padding: 15px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
@@ -502,4 +503,7 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
+}
+.gallery{
+    padding-bottom: 30px;
 }
