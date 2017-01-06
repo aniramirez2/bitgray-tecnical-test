@@ -69,8 +69,11 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #86908E;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;    
   color: white;
+  height: 800px
 }
 header .container {
   padding-top: 100px;
@@ -84,8 +87,10 @@ header .intro-text .name {
   display: block;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 2em;
+  color: grey;
+  text-align: left    
 }
 header .intro-text .skills {
   font-size: 1.25em;
@@ -502,4 +507,29 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
+}
+.photo-title{
+    font-size:10pt;
+    color:gray;
+    max-width:210px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;        
+}
+.personal-info{
+    background-color: #ff7f5099;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    min-height: 170px
+}
+.professional-info{
+    background-color: #00800080;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    min-height: 170px
+}
+.left{
+    text-align: left
 }

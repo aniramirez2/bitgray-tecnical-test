@@ -3,40 +3,31 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
-                    <div class="intro-text">
+                <div class="col-lg-5">
+                    <div class="intro-text" style="margin-top:-40px">
                         <span class="name">{{ users.name }}</span>
-                        <hr class="star-light">
-                        <span class="skills">{{ users.username }}</span>
+                    </div>    
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="col-lg-3  personal-info">
+                            <p class="title-info">Información personal</p>
+                            <ul>
+                                <li class="left"><b>User:</b> {{users.username}}</li>
+                                <li class="left"><b>Email:</b> {{ users.email }} </li>
+                                <li class="left"><b>Phone:</b> {{ users.phone }}</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-lg-offset-1 professional-info">
+                            <p class="title-info">Información laboral</p>
+                            <ul>
+                                <li class="left"><b>Company:</b> {{ users.company.name }}</li>
+                                <li class="left"><b>Roles:</b> {{ users.company.catchPhrase }} </li>
+                                <li class="left"><b>Bs:</b> {{users.company.bs}}</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Email:</h3>
-                        <p>{{ users.email}}</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Telefono:</h3>
-                        <p>{{ users.phone }}.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        {{ users.company.name }} - {{ users.company.catchPhrase }}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
