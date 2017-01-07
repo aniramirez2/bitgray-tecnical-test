@@ -521,14 +521,14 @@ fieldset[disabled] .btn-success.active {
     color: white;
     padding: 20px;
     margin-top: 20px;
-    min-height: 170px
+    min-height: 200px
 }
 .professional-info{
     background-color: #00800080;
     color: white;
     padding: 20px;
     margin-top: 20px;
-    min-height: 170px
+    min-height: 200px
 }
 .left{
     text-align: left
