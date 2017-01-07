@@ -34,13 +34,6 @@ h6 {
 .gallery{
     padding-bottom: 30px;
 }
-.photo-title{
-    font-size:10pt;
-    color:gray;
-    text-overflow:ellipsis;
-    width:150px;
-    overflow:hidden;
-}
 hr.star-light,
 hr.star-primary {
   padding: 0;
@@ -95,7 +88,7 @@ header .intro-text .name {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 2e;
 }
 header .intro-text .skills {
   font-size: 1.25em;

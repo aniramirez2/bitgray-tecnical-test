@@ -1,39 +1,14 @@
-// one file
-// NOTE: the immediately invoked function expression 
-// is used to exemplify different files and is not required
-(function(){
-   // declaring the module in one file / anonymous function
-   // (only pass a second parameter THIS ONE TIME as a redecleration creates bugs
-   // which are very hard to dedect)
-   angular.module('myApp.pictures', []);
-   angular.module('myApp.profile', []);    
-})();
+'use strict';
 
+// Declare app level module which depends on views, and components
+angular.module('myApp', [
+  'ngRoute',
+  'myApp.pictures',
+  'myApp.profile',
+]).
+config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
+  $locationProvider.hashPrefix('!');
 
-// another file and/or another anonymous function
-(function(){   
- // using the function form of use-strict...
- "use strict";
-  // accessing the module in another. 
-  // this can be done by calling angular.module without the []-brackets
-  angular.module('myApp.pictures', ['ngRoute'])
-    .config(['$routeProvider', function($routeProvider) {
-      $routeProvider.when('/pictures', {
-        templateUrl: 'main/pictures/picturesView.html',
-        controller: 'picturesCtrl'
-      });
-    }])
+  $routeProvider.otherwise({redirectTo: '/profile'});
+}]);
 
-  // you can of course use angular.module('mymod') here as well
-  angular.module('myApp.profile', ['ngRoute'])
-      .config(['$routeProvider', function($routeProvider) {
-          $routeProvider.when('/profile', {
-            templateUrl: 'main/profile/profileView.html',
-            controller: 'profileCtrl'
-          });
-      }])
-      .run(function($rootScope) {
-        $rootScope.userId = Math.floor((Math.random() * 10)+1);
-    });    
-  
-})();
